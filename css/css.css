@@ -1,0 +1,14 @@
+header{
+	height: 200px;
+}
+.title{
+	background: #007bff;
+    color: white;
+    text-align: center;
+}
+.khoi{
+	border: 1px solid black;
+}
+.nd{
+	padding-left: 5px;
+}

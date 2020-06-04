@@ -1,0 +1,86 @@
+<!-- 
+	tìm hiểu thêm về es6
+	http://es6-features.org/#Constants
+	http://kangax.github.io/compat-table/es6/ : 1 bảng so sánh các thuộc tính/ phương thức theo từng trình duyệt
+	http://webbrowsercompatibility.com/es6/desktop/
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="./css/bootstrap.min.css">
+	<link rel="stylesheet" href="./css/css.css">
+	
+</head>
+<body>
+	<header>
+		
+	</header>
+	<section class="container">
+		<div class="row">
+			<div class="col-md-6">
+				<div class="khoi">
+					<div class="title">
+						<p>Giới thiệt về ES6</p>
+					</div>
+					<div class="nd">
+						Tài liệu tham khảo:
+						<ol class="">
+							<li class=""><a href="http://es6-features.org/#Constants">ES6 Feature</a></li>
+							<li class=""><a href="http://kangax.github.io/compat-table/es6/">Compat Tablet</a></li>
+							<li class=""><a href="http://webbrowsercompatibility.com/es6/desktop/">ES6 Desktop</a></li>
+						</ol>
+					</div>
+				</div>
+				
+			</div>
+			<div class="col-md-6">
+				<div class="khoi">
+					<div class="title">
+						<p>Variable - Template String - spread - Destructing</p>
+					</div>
+					<div class="nd">
+						<ol class="">
+							<li class="">let</li>
+							<li class="">const</li>
+							<li class="">template string</li>
+							<li class="">for</li>
+							<li class="">spread</li>
+							<li class="">Destructing</li>
+						</ol>
+					</div>
+				</div>
+				
+			</div>
+			
+		</div>
+	</section>
+	<!-- ví dụ -->
+	<section class="container">
+		<p>Ví dụ và bài tập </p>
+		<div class="row">
+			<div class="col-md-12">
+				<button class="btn btn-primary" id="draw" onclick="draw_gt()">Draw</button>
+				<button class="btn btn-danger" onclick="clear_draw()">Clear</button>
+			</div>
+		</div>
+		<br>
+		<div class="row" id="kq">
+			
+		</div>
+	</section>
+	<footer>
+		<script src="./js/jquery-3.5.1.js"></script>
+		<script src="./js/bootstrap.min.js"></script>
+		<script src="./mjs/01-let.js"></script>
+	</footer>
+	<style>
+		.hinhcn{
+			border: 1px solid red;
+    		height: 40px;
+    		margin:5px;
+		}
+	</style>
+</body>
+</html>
