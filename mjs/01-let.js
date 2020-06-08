@@ -40,6 +40,24 @@ function draw_gt(){
 	ve = ve + '<div class="col-md-2 hinhcn"></div>';
 	$('#kq').html(ve);
 }
-function clear_draw(){
-	$('#kq').html('');
+// cách 2
+// nếu k dùng let giá trị i thiển thị ra bằng giá trị cuối cùng của vòng for và nó sẽ k hiển thị đúng dl
+function draw_gt2(){
+	var kq = document.getElementById('kq'); 
+	kq.innerHTML='';
+	for (let i = 1; i <= 10; i++) {
+		var thespan = document.createElement("span"); // 1 đối tượng
+		thespan.innerHTML= i;
+		kq.appendChild(thespan);
+		thespan.onclick=function(){
+			alert("Gitri " +i);
+		}
+	}
+
 }
+function clear_draw(){
+	var kq = document.getElementById('kq'); 
+	kq.innerHTML='';
+}
+// document.appendChild()// thêm giá trị con vào thẻ cả
+// document.createElement('p') // tạo ra một thẻ html nào đó
